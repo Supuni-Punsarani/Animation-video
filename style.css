@@ -1,0 +1,55 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+ 
+}
+.img1{
+    width:300px;
+    position: relative;
+    top:400px;
+    animation:anim1 3s  linear infinite ;
+}
+.img2{
+    width:300px;
+    position: absolute;
+    left: -100px;
+    top:600px;
+    animation:anim1 3s linear infinite;
+}
+.img3{
+    width:100px;
+    height:100px;
+    position: relative;
+    top:60px;
+    animation:anim2 20s linear 1 forwards 3s;
+}
+.img4{
+    width:300px;
+    height:200px;
+    position: relative;
+    top:50px;
+    animation:anim3 15s linear 1 forwards;
+}
+@keyframes anim1{
+    100%{
+        transform: translatex(1000px);
+    }
+}
+@keyframes anim2{
+     40%{
+        transform: translatex(300px);
+    }
+   
+    100%{
+        transform: translatex(1000px) scale(0);
+    }
+}
+@keyframes anim3{
+    100%{
+        transform: translatex(1000px) scale(0);
+    }
+}
+
